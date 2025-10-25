@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Whalemilkers Bot Network</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --subtext: #555555;
+  --accent: #4aa8ff;
+}
+[data-theme="dark"] {
+  --bg: #0d0f12;
+  --text: #e7e7e7;
+  --subtext: #b6b6b6;
+  --accent: #6cb8ff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background .3s, color .3s;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.whale-icon {
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+p.subtitle {
+  color: var(--subtext);
+  margin-bottom: 40px;
+}
+
+section {
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: var(--subtext);
+}
+
+/* Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+<header>
+<!-- Minimal Whale Outline SVG -->
+<svg class="whale-icon" viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M2 16c0 6 5 14 22 14 18 0 34-10 34-20 0-6-4-8-7-8-4 0-6 3-6 5 0 2 1 4 3 5-2 0-6-1-9-4C34 5 30 2 26 2 16 2 2 7 2 16z"/>
+</svg>
+
+<h1>Whalemilkers Bot Network</h1>
+<p class="subtitle">Reliable • Secure • Community-Focused Automation</p>
+</header>
+
+<section>
+<h2>About</h2>
+<p>This network provides multiple Discord bots designed for moderation, automation, community interaction, and enhanced server functionality.</p>
+
+<h2>Terms of Service</h2>
+<p>By using any bot in this network, you agree to follow Discord's Terms and Community Guidelines. Abuse, spam, misuse, or attempts to exploit features may result in denied access.</p>
+
+<h2>Privacy Policy</h2>
+<p>The bots may store User IDs, Server IDs, Message Content (when moderation features apply), Command Logs, Moderation Logs, and custom economy/leveling data. Data is stored securely and never sold. To request data removal, contact: <strong>whale_0531</strong> on Discord.</p>
+
+<h2>Contact</h2>
+<p>Support / Data deletion requests: <strong>Discord: whale_0531</strong></p>
+</section>
+
+<footer>
+© Whalemilkers Bot Network — All Rights Reserved
+</footer>
+
+<script>
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme");
+  document.documentElement.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+}
+</script>
+
+</body>
+</html>
